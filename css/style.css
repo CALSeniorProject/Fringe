@@ -1,0 +1,112 @@
+
+
+/* 	CALIFORNIA UNIVERSITY OF PENNSYLVANIA
+	SPRING 2015 COMPUTER INFORMATION SYSTEMS SENIOR PROJECT
+	
+	WEB DESIGN  		CAITRIN G. FITZGERALD
+	& BACK END			ELMER WORK
+
+	DATABASE			ANTHONY J. SANNER
+	DEVELOPMENT			FATOU JALLOW
+
+	ALL DEVELOPMENT IS FOR BLAWK OF FRINGE NETWORKS */
+
+
+/* Universal Character Set */
+@charset "UTF-8";
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Web Version */
+html { line-height: 1; font-size: 100%; line-height: 1.5em; }
+ol, ul { list-style: none; }
+a { text-decoration: none; }
+
+#login {
+	margin: 0 auto;
+}
+
+body { 
+	background: #fff; 
+	font-family: "Open Sans"; 
+	font-weight: 400; 
+	color: #555555; 
+	position: relative; 
+/* Different Browsers */
+	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Defines Screen Rages For Web */	
+@media only screen and (max-width: 767px) { 
+	body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
+	html, body { height: 100%; }
+
+
+/* Mobile Version */
+
+@media only screen and (max-width: 768px) { .fixed { position: relative !important; top: auto !important; left: auto !important; } }
+
+.unfixed { position: relative !important; top: auto !important; left: auto !important; }
+
+.text-center { text-align: center; }
+
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+
+@media only screen and (max-width: 767px) { h1, h2, h3, h4, h5, h6 { word-wrap: break-word; } }
+h1 { font-size: 70px; font-size: 4rem; }
+h1.xlarge { font-size: 100px; font-size: 7rem; }
+
+h2 { font-size: 41.88854px; font-size: 2.61803rem; }
+h3 { font-size: 29.79335px; font-size: 1.86208rem; }
+h4 { font-size: 25.88854px; font-size: 1.61803rem; }
+h5 { font-size: 18.4133px; font-size: 1.15083rem; }
+h6 { font-size: 16px; font-size: 1rem; }
+
+@media only screen and (max-width: 767px) { h1 { font-size: 41.88854px; font-size: 2.61803rem; }
+  h2 { font-size: 35.79335px; font-size: 2.23708rem; } }
+.subhead { color: #777; font-weight: normal; margin-bottom: 20px; }
+
+
+.row { width: 100%; max-width: 980px; min-width: 320px; margin: 0 auto; padding-left: 20px; padding-right: 20px; }
+.row .row { min-width: 0; padding-left: 0; padding-right: 0; }
+
+/* ----- COLUMN CLASSES ----- */
+.row .one.column { width: 6.38298%; }
+.row .one.columns { width: 6.38298%; }
+.row .two.columns { width: 14.89362%; }
+.row .three.columns { width: 23.40426%; }
+.row .four.columns { width: 31.91489%; }
+.row .five.columns { width: 40.42553%; }
+.row .six.columns { width: 48.93617%; }
+.row .seven.columns { width: 57.44681%; }
+.row .eight.columns { width: 65.95745%; }
+.row .nine.columns { width: 74.46809%; }
+.row .ten.columns { width: 82.97872%; }
+.row .eleven.columns { width: 91.48936%; }
+.row .twelve.columns { width: 100%; }
+
+img, object, embed { max-width: 100%; height: auto; }
+
+
+#map_canvas img, .map_canvas img { max-width: none !important; }
+
+/* Mobile */
+@media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; }
+  		.container { min-width: 0; margin-left: 0; margin-right: 0; }
+  		.row { width: 100%; min-width: 0; margin-left: 0; margin-right: 0; }
+  		.row .row .column, .row .row .columns { padding: 0; }
+  		.row .centered { margin-left: 0 !important; }
+  		.column, .columns { width: auto !important; float: none; margin-left: 0; margin-right: 0; }
+  		.column:last-child, .columns:last-child { margin-right: 0; float: none; }
+  		[class*="column"] + [class*="column"]:last-child { float: none; }
+  		[class*="column"]:before { display: table; }
+  		[class*="column"]:after { display: table; clear: both; }
+  		[class^="push_"], [class*="push_"], [class^="pull_"], [class*="pull_"] { margin-left: 0 !important; } }
+
+
+  		

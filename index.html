@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Blawk by Fringe</title>
+  <link rel="icon" href="icon.png" type="icon" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+  <script language="javascript">
+
+<!--// Checks the Username and Password 
+    function passuser(form) {
+      if (form.id.value=="admin") { 
+        if (form.pass.value=="admin") {              
+          location="user.html" 
+        } 
+          else {
+            alert("Invalid Password")
+          }
+        } 
+        else { 
+          alert("Invalid Username")
+        }
+      }
+  //-->
+</script>
+
+</head>
+
+<style>
+  html, body {
+    background-image: url("img/white.png");
+  }
+
+  h1, h2 {
+    font: bold italic 220px georgia, times new roman, serif;
+    color: #555;
+    letter-spacing: -.09em;
+    -webkit-transition-duration: 1s;
+  }
+
+  h2  {
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 1.6;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 60px;
+    margin-bottom: 0;
+    color: #555;
+
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    transition-duration: .2s;
+  }
+
+  .column:hover p, .columns:hover p {
+    font-size: 25px;
+    font-weight: bold;
+
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    transition-duration: .2s;
+  }
+
+  .head, .head:hover {
+    box-shadow: none;
+    margin-top: 30px;
+  }
+
+  .head span {
+    font-weight: bold;
+    color: #353535;
+  }
+
+  .head span span {
+    font-size: 32px;
+    font-weight: bold !important;
+  }
+
+  a {
+    color: #d04526;
+  }
+
+  a:hover {
+    text-decoration:underline;
+  }
+
+  .special, .special:hover {
+    background: transparent;
+        border: none;
+  }
+
+  .special:hover p {
+    color: #ffe400;
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    h1 {
+      font: bold italic 100px georgia, times new roman, serif;
+      -webkit-transition-duration: .5s;
+    }
+
+  }
+
+</style>
+
+<body>
+  <div class="row">
+    <div class="twelve columns special head"><center>
+      <h1><img src="img/b.png">lawk</h1>
+      <h2>The <span> hawk </span> that <span> watches</span>
+      your network</h2></center>
+    </div>
+  </div>
+
+  <div id="login"><div class="twelve columns special head"><center>
+  <table style="font-family:calibri;">
+    <tr><td align="right">Username</td><td>
+      <form name="login"><input name="id" type="text" size="30" onkeypress="if(event.keyCode==13) {javascript:passuser(this.form);}"></td></tr>
+    
+    <tr><td align="right">Password</td><td>
+      <input name="pass" type="password" size="30" onkeypress="if(event.keyCode==13) {javascript:passuser(this.form);}"></td></tr>
+    <tr><td></td><td align="right"><a href="#">New User</a></td></tr>
+    <tr><td></td><td align="center"><br>
+      <input type="button" value="Submit" onClick="passuser(this.form)">
+    </form></td></tr><tr><td></td><td>
+    <br><br><br><a href="#">View Our Services Here</a></td></tr>
+  </table>
+</div>
+</div>
+
+  </body>
+</html>
