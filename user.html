@@ -6,34 +6,16 @@
   <title>Blawk by Fringe</title>
   <link rel="icon" href="icon.png" type="icon" />
   <link rel="stylesheet" href="css/style.css">
-  <script language="javascript">
-
-<!--// Checks the Username and Password 
-    function passuser(form) {
-      if (form.id.value=="admin") { 
-        if (form.pass.value=="admin") {              
-          location="user.html" 
-        } 
-          else {
-            alert("Invalid Password")
-          }
-        } 
-        else { 
-          alert("Invalid Username")
-        }
-      }
-  //-->
-</script>
-
 </head>
 
 <style>
+
   html, body {
     background-image: url("img/white.png");
   }
 
-  h1, h2 {
-    font: bold italic 200px georgia, times new roman, serif;
+  h1 {
+    font: bold italic 100px georgia, times new roman, serif;
     color: #555;
     letter-spacing: -.09em;
     -webkit-transition-duration: 1s;
@@ -43,6 +25,8 @@
     font-size: 21px;
     font-weight: normal;
     line-height: 1.6;
+    word-spacing: 70px;
+    -webkit-transition-duration: 1s;
   }
 
   p {
@@ -104,40 +88,43 @@
   @media only screen and (max-width: 767px) {
 
     h1 {
-      font: bold italic 100px georgia, times new roman, serif;
+      font: bold italic 50px georgia, times new roman, serif;
       -webkit-transition-duration: .5s;
+    }
+
+    h2 {
+      font: 16px georgia, times new roman, serif;
+      -webkit-transition-duration: .5s;
+      word-spacing: 25px;
     }
 
     img
 
   }
 
+#wrapper {
+  background-image: url("img/grey.png");
+  width: 100%;
+  height: 100%;
+}
+
+#bg {
+  background-image: url("img/white.png");
+  width: 85%;
+  margin-top: -50px;  height: 100%;
+  margin: 0 auto;
+}
+
 </style>
 
 <body>
-  <div class="row">
-    <div class="twelve columns special head"><center>
-      <h1>Blawk</h1>
-      <h2>The <span> hawk </span> that <span> watches</span>
-      your network</h2></center>
-    </div>
-  </div>
 
-  <div id="login"><div class="twelve columns special head"><center>
-  <table style="font-family:calibri;">
-    <tr><td align="right">Username</td><td>
-      <form name="login"><input name="id" type="text" size="30" onkeypress="if(event.keyCode==13) {javascript:passuser(this.form);}"></td></tr>
-    
-    <tr><td align="right">Password</td><td>
-      <input name="pass" type="password" size="30" onkeypress="if(event.keyCode==13) {javascript:passuser(this.form);}"></td></tr>
-    <tr><td></td><td align="right"><a href="#">New User</a></td></tr>
-    <tr><td></td><td align="center"><br>
-      <input type="button" value="Submit" onClick="passuser(this.form)">
-    </form></td></tr><tr><td></td><td>
-    <br><br><br><a href="#">View Our Services Here</a></td></tr>
-  </table>
+<div id="wrapper"><div id="bg"><center>
+      <h1>Blawk</h1>
+      <h2><br>Home About Stuff Things Cool</h2></center>
 </div>
 </div>
+
 
   </body>
 </html>
